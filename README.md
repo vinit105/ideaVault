@@ -2,6 +2,8 @@
 
 Welcome to **IdeaVault**, an open-source SaaS platform that empowers developers and founders to **license their original software project ideas** under a unique 1% attribution model.
 
+- contribute with your code, no ai tools contribution..
+
 ---
 ---
 
