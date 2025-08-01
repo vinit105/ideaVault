@@ -56,7 +56,7 @@ const Home: React.FC = () => {
             </div>
             
             <div className="text-center p-6">
-              <div className="text-4xl mb-4">🛡</div>
+              <div className="text-4xl mb-4 text-black">🛡</div>
               <h3 className="text-xl font-bold mb-2">License Certificates</h3>
               <p className="text-gray-600">
                 Download official license certificates for each idea submission
