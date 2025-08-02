@@ -1,5 +1,7 @@
 # 💡 IdeaVault - License Your Ideas. Get Recognized.
-
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
 Welcome to **IdeaVault**, an open-source SaaS platform that empowers developers and founders to **license their original software project ideas** under a unique 1% attribution model.
 
 - contribute with your code, no ai tools contribution..
@@ -143,9 +145,6 @@ git push origin feature/your-feature-name
 
 Thanks to all the contributors for their efforts!
 
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ---
 
@@ -176,6 +175,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   <tbody>
     <tr>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/vinit105"><img src="https://avatars.githubusercontent.com/u/161505072?v=4?s=100" width="100px;" alt="Vinit"/><br /><sub><b>Vinit</b></sub></a><br /><a href="https://github.com/vinit105/ideaVault/commits?author=vinit105" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/tusharg2210"><img src="https://avatars.githubusercontent.com/u/147972748?v=4?s=100" width="100px;" alt="Tushar Gupta"/><br /><sub><b>Tushar Gupta</b></sub></a><br /><a href="https://github.com/vinit105/ideaVault/commits?author=tusharg2210" title="Code">💻</a></td>
     </tr>
   </tbody>
   <tfoot>
