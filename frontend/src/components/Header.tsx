@@ -63,7 +63,8 @@ const Header: React.FC = () => {
                         {/* Theme Toggle Button */}
                         <button
                             onClick={toggleTheme}
-                            className="transition-all duration-300 cursor-pointer flex items-center justify-center px-3 py-2 rounded-full border border-green-400 dark:border-purple-600 bg-white dark:bg-gray-800 text-green-800 dark:text-white hover:bg-green-100 dark:hover:bg-purple-700"
+                            aria-label="Toggle Theme"
+                            className="transition duration-300 ease-in-out cursor-pointer flex items-center justify-center p-2 rounded-full border bg-white dark:bg-gray-900 text-blue-800 dark:text-white border-blue-300 dark:border-purple-600 hover:bg-blue-100 dark:hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-400 dark:focus:ring-purple-500"
                         >
                             {theme === "dark" ? (
                                 <Sun className="w-5 h-5 text-yellow-400" />

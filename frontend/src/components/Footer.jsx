@@ -60,7 +60,7 @@ const Footer = () => {
     ];
 
     return (
-        <footer className="bg-white dark:bg-gray-900 text-gray-600 dark:text-gray-300 pt-12 pb-6 border-t border-blue-100">
+        <footer className="bg-white dark:bg-gray-900 text-gray-600 dark:text-gray-300 pt-12 pb-6">
             <div className="max-w-6xl mx-auto px-4">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
                     {/* Brand Info */}
