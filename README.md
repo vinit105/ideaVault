@@ -12,16 +12,16 @@ Welcome to **IdeaVault**, an open-source SaaS platform that empowers developers 
 
 ## 📌 Table of Contents
 
-- [Introduction](#introduction)
-- [Technology Used](#technology-used)
+- [Introduction](#-introduction)
+- [Technology Used](#-technology-used)
 - [Key Features](#-key-features)
-- [Overview](#overview)
-- [Getting Started](#getting-started)
-- [Contribution Guidelines](#contribution-guidelines)
-- [How to Report Bugs](#how-to-report-bugs)
-- [How to Request Enhancements](#how-to-request-enhancements)
-- [Contributors](#contributors)
-- [Support](#support)
+- [Overview](#-overview)
+- [Getting Started](#-getting-started)
+- [Contribution Guidelines](#-contribution-guidelines)
+- [How to Report Bugs](#-how-to-report-bugs)
+- [How to Request Enhancements](#-how-to-request-enhancements)
+- [Contributors](#-contributors)
+- [Support](#-support)
 
 ---
 
