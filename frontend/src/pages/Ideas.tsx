@@ -12,7 +12,7 @@ interface Idea {
   textColor: string;
 }
 
-const allIdeas: Idea[] = [
+const allIdeasTemplate : Idea[] = [
   {
     id: 1,
     title: 'Smart Recipe Optimizer',
@@ -48,374 +48,27 @@ const allIdeas: Idea[] = [
     views: 87,
     bgColor: "bg-amber-100",
     textColor: "text-amber-800"
-  },{
-    id: 4,
-    title: 'Smart Recipe Optimizer',
-    category: 'Web App',
-    date: '2 days ago',
-    description:
-      'AI-powered app that optimizes recipes based on available ingredients.',
-    likes: 12,
-    views: 45,
-    bgColor: "bg-blue-100",
-    textColor: "text-blue-800"
-  },
-  {
-    id: 5,
-    title: 'Micro-Learning Platform',
-    category: 'Mobile App',
-    date: '5 days ago',
-    description:
-      '5-minute learning sessions based on user interests and schedule.',
-    likes: 8,
-    views: 32,
-    bgColor: "bg-green-100",
-    textColor: "text-green-800"
-  },
-  {
-    id: 6,
-    title: 'Code Review Assistant',
-    category: 'AI/ML',
-    date: '1 week ago',
-    description:
-      'AI assistant that reviews code and detects security flaws.',
-    likes: 24,
-    views: 87,
-    bgColor: "bg-amber-100",
-    textColor: "text-amber-800"
-  },{
-    id: 7,
-    title: 'Smart Recipe Optimizer',
-    category: 'Web App',
-    date: '2 days ago',
-    description:
-      'AI-powered app that optimizes recipes based on available ingredients.',
-    likes: 12,
-    views: 45,
-    bgColor: "bg-blue-100",
-    textColor: "text-blue-800"
-  },
-  {
-    id: 8,
-    title: 'Micro-Learning Platform',
-    category: 'Mobile App',
-    date: '5 days ago',
-    description:
-      '5-minute learning sessions based on user interests and schedule.',
-    likes: 8,
-    views: 32,
-    bgColor: "bg-green-100",
-    textColor: "text-green-800"
-  },
-  {
-    id: 9,
-    title: 'Code Review Assistant',
-    category: 'AI/ML',
-    date: '1 week ago',
-    description:
-      'AI assistant that reviews code and detects security flaws.',
-    likes: 24,
-    views: 87,
-    bgColor: "bg-amber-100",
-    textColor: "text-amber-800"
-  },{
-    id: 10,
-    title: 'Smart Recipe Optimizer',
-    category: 'Web App',
-    date: '2 days ago',
-    description:
-      'AI-powered app that optimizes recipes based on available ingredients.',
-    likes: 12,
-    views: 45,
-    bgColor: "bg-blue-100",
-    textColor: "text-blue-800"
-  },
-  {
-    id: 11,
-    title: 'Micro-Learning Platform',
-    category: 'Mobile App',
-    date: '5 days ago',
-    description:
-      '5-minute learning sessions based on user interests and schedule.',
-    likes: 8,
-    views: 32,
-    bgColor: "bg-green-100",
-    textColor: "text-green-800"
-  },
-  {
-    id: 12,
-    title: 'Code Review Assistant',
-    category: 'AI/ML',
-    date: '1 week ago',
-    description:
-      'AI assistant that reviews code and detects security flaws.',
-    likes: 24,
-    views: 87,
-    bgColor: "bg-amber-100",
-    textColor: "text-amber-800"
-  },{
-    id: 13,
-    title: 'Smart Recipe Optimizer',
-    category: 'Web App',
-    date: '2 days ago',
-    description:
-      'AI-powered app that optimizes recipes based on available ingredients.',
-    likes: 12,
-    views: 45,
-    bgColor: "bg-blue-100",
-    textColor: "text-blue-800"
-  },
-  {
-    id: 14,
-    title: 'Micro-Learning Platform',
-    category: 'Mobile App',
-    date: '5 days ago',
-    description:
-      '5-minute learning sessions based on user interests and schedule.',
-    likes: 8,
-    views: 32,
-    bgColor: "bg-green-100",
-    textColor: "text-green-800"
-  },
-  {
-    id: 15,
-    title: 'Code Review Assistant',
-    category: 'AI/ML',
-    date: '1 week ago',
-    description:
-      'AI assistant that reviews code and detects security flaws.',
-    likes: 24,
-    views: 87,
-    bgColor: "bg-amber-100",
-    textColor: "text-amber-800"
-  },{
-    id: 16,
-    title: 'Smart Recipe Optimizer',
-    category: 'Web App',
-    date: '2 days ago',
-    description:
-      'AI-powered app that optimizes recipes based on available ingredients.',
-    likes: 12,
-    views: 45,
-    bgColor: "bg-blue-100",
-    textColor: "text-blue-800"
-  },
-  {
-    id: 17,
-    title: 'Micro-Learning Platform',
-    category: 'Mobile App',
-    date: '5 days ago',
-    description:
-      '5-minute learning sessions based on user interests and schedule.',
-    likes: 8,
-    views: 32,
-    bgColor: "bg-green-100",
-    textColor: "text-green-800"
-  },
-  {
-    id: 18,
-    title: 'Code Review Assistant',
-    category: 'AI/ML',
-    date: '1 week ago',
-    description:
-      'AI assistant that reviews code and detects security flaws.',
-    likes: 24,
-    views: 87,
-    bgColor: "bg-amber-100",
-    textColor: "text-amber-800"
-  },{
-    id: 19,
-    title: 'Smart Recipe Optimizer',
-    category: 'Web App',
-    date: '2 days ago',
-    description:
-      'AI-powered app that optimizes recipes based on available ingredients.',
-    likes: 12,
-    views: 45,
-    bgColor: "bg-blue-100",
-    textColor: "text-blue-800"
-  },
-  {
-    id: 20,
-    title: 'Micro-Learning Platform',
-    category: 'Mobile App',
-    date: '5 days ago',
-    description:
-      '5-minute learning sessions based on user interests and schedule.',
-    likes: 8,
-    views: 32,
-    bgColor: "bg-green-100",
-    textColor: "text-green-800"
-  },
-  {
-    id: 21,
-    title: 'Code Review Assistant',
-    category: 'AI/ML',
-    date: '1 week ago',
-    description:
-      'AI assistant that reviews code and detects security flaws.',
-    likes: 24,
-    views: 87,
-    bgColor: "bg-amber-100",
-    textColor: "text-amber-800"
-  },{
-    id: 22,
-    title: 'Smart Recipe Optimizer',
-    category: 'Web App',
-    date: '2 days ago',
-    description:
-      'AI-powered app that optimizes recipes based on available ingredients.',
-    likes: 12,
-    views: 45,
-    bgColor: "bg-blue-100",
-    textColor: "text-blue-800"
-  },
-  {
-    id: 23,
-    title: 'Micro-Learning Platform',
-    category: 'Mobile App',
-    date: '5 days ago',
-    description:
-      '5-minute learning sessions based on user interests and schedule.',
-    likes: 8,
-    views: 32,
-    bgColor: "bg-green-100",
-    textColor: "text-green-800"
-  },
-  {
-    id: 24,
-    title: 'Code Review Assistant',
-    category: 'AI/ML',
-    date: '1 week ago',
-    description:
-      'AI assistant that reviews code and detects security flaws.',
-    likes: 24,
-    views: 87,
-    bgColor: "bg-amber-100",
-    textColor: "text-amber-800"
-  },{
-    id: 25,
-    title: 'Smart Recipe Optimizer',
-    category: 'Web App',
-    date: '2 days ago',
-    description:
-      'AI-powered app that optimizes recipes based on available ingredients.',
-    likes: 12,
-    views: 45,
-    bgColor: "bg-blue-100",
-    textColor: "text-blue-800"
-  },
-  {
-    id: 26,
-    title: 'Micro-Learning Platform',
-    category: 'Mobile App',
-    date: '5 days ago',
-    description:
-      '5-minute learning sessions based on user interests and schedule.',
-    likes: 8,
-    views: 32,
-    bgColor: "bg-green-100",
-    textColor: "text-green-800"
-  },
-  {
-    id: 27,
-    title: 'Code Review Assistant',
-    category: 'AI/ML',
-    date: '1 week ago',
-    description:
-      'AI assistant that reviews code and detects security flaws.',
-    likes: 24,
-    views: 87,
-    bgColor: "bg-amber-100",
-    textColor: "text-amber-800"
-  },{
-    id: 28,
-    title: 'Smart Recipe Optimizer',
-    category: 'Web App',
-    date: '2 days ago',
-    description:
-      'AI-powered app that optimizes recipes based on available ingredients.',
-    likes: 12,
-    views: 45,
-    bgColor: "bg-blue-100",
-    textColor: "text-blue-800"
-  },
-  {
-    id: 29,
-    title: 'Micro-Learning Platform',
-    category: 'Mobile App',
-    date: '5 days ago',
-    description:
-      '5-minute learning sessions based on user interests and schedule.',
-    likes: 8,
-    views: 32,
-    bgColor: "bg-green-100",
-    textColor: "text-green-800"
-  },
-  {
-    id: 30,
-    title: 'Code Review Assistant',
-    category: 'AI/ML',
-    date: '1 week ago',
-    description:
-      'AI assistant that reviews code and detects security flaws.',
-    likes: 24,
-    views: 87,
-    bgColor: "bg-amber-100",
-    textColor: "text-amber-800"
-  },{
-    id: 31,
-    title: 'Smart Recipe Optimizer',
-    category: 'Web App',
-    date: '2 days ago',
-    description:
-      'AI-powered app that optimizes recipes based on available ingredients.',
-    likes: 12,
-    views: 45,
-    bgColor: "bg-blue-100",
-    textColor: "text-blue-800"
-  },
-  {
-    id: 32,
-    title: 'Micro-Learning Platform',
-    category: 'Mobile App',
-    date: '5 days ago',
-    description:
-      '5-minute learning sessions based on user interests and schedule.',
-    likes: 8,
-    views: 32,
-    bgColor: "bg-green-100",
-    textColor: "text-green-800"
-  },
-  {
-    id: 33,
-    title: 'Code Review Assistant',
-    category: 'AI/ML',
-    date: '1 week ago',
-    description:
-      'AI assistant that reviews code and detects security flaws.',
-    likes: 24,
-    views: 87,
-    bgColor: "bg-amber-100",
-    textColor: "text-amber-800"
-  },{
-    id: 34,
-    title: 'Smart Recipe Optimizer',
-    category: 'Web App',
-    date: '2 days ago',
-    description:
-      'AI-powered app that optimizes recipes based on available ingredients.',
-    likes: 12,
-    views: 45,
-    bgColor: "bg-blue-100",
-    textColor: "text-blue-800"
   }
-  // ➕ Add more dummy items to test pagination (up to 15–20+)
-];
+]
+
+// -------------- code to add same idea multiple times (refined code)
+const repeatCount = 20; // how many times to repeat the template
+const allIdeas: Idea[] = [];
+
+for (let i = 0; i < repeatCount; i++) {
+  for (let j = 0; j < allIdeasTemplate.length; j++) {
+    const template = allIdeasTemplate[j];
+    allIdeas.push({
+      ...template,
+      id: i * allIdeasTemplate.length + j + 1
+    });
+  }
+}
+// -------------- code to add same idea multiple times (refined code)
 
 const Ideas: React.FC = () => {
   const [activePage, setActivePage] = useState(1);
-   const [selectedCategory, setSelectedCategory] = useState('All Categories');
+  const [selectedCategory, setSelectedCategory] = useState('All Categories');
 
   const filteredIdeas =
     selectedCategory === 'All Categories'
@@ -441,11 +94,11 @@ const Ideas: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 py-8">
+    <div className="min-h-screen bg-gray-50 dark:bg-gray-800 py-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">Browse Ideas</h1>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <h1 className="text-4xl font-bold text-gray-900 dark:text-gray-100 mb-4">Browse Ideas</h1>
+          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
             Explore innovative software project ideas licensed by our community
           </p>
         </div>
@@ -456,10 +109,10 @@ const Ideas: React.FC = () => {
             <input
               type="text"
               placeholder="Search ideas..."
-              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+              className="w-full px-4 py-2 border border-gray-300 dark:bg-gray-100 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
             />
           </div>
-          <div className="flex gap-2">
+          <div className="flex gap-4">
             <select onChange={handleCategoryChange}
               value={selectedCategory}  className="px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500">
               <option>All Categories</option>
@@ -481,20 +134,20 @@ const Ideas: React.FC = () => {
           {paginatedIdeas.map((idea) => (
             <div
               key={idea.id}
-              className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition"
+              className="bg-white dark:bg-gray-700 rounded-lg shadow-md p-6 hover:shadow-lg "
             >
               <div className="flex items-center justify-between mb-4">
                 <span className={` ${idea.bgColor} ${idea.textColor} px-3 py-1 rounded-full text-sm font-medium`}>
                   {idea.category}
                 </span>
-                <span className="text-gray-500 text-sm">{idea.date}</span>
+                <span className="text-gray-500 dark:text-gray-400 text-sm">{idea.date}</span>
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">{idea.title}</h3>
-              <p className="text-gray-600 mb-4">{idea.description}</p>
+              <h3 className="text-xl font-bold text-gray-900 dark:text-gray-50 mb-2">{idea.title}</h3>
+              <p className="text-gray-600 dark:text-gray-300 mb-4">{idea.description}</p>
               <div className="flex items-center justify-between">
                 <div className="flex items-center space-x-2">
-                  <span className="text-green-600">👍 {idea.likes}</span>
-                  <span className="text-gray-500">👁 {idea.views}</span>
+                  <span className="text-green-600 dark:text-green-400">👍 {idea.likes}</span>
+                  <span className="text-gray-500 dark:text-gray-300">👁 {idea.views}</span>
                 </div>
                 <button className="bg-blue-600 text-white px-4 py-2 rounded-md text-sm hover:bg-blue-700">
                   View License
@@ -510,7 +163,7 @@ const Ideas: React.FC = () => {
             <button
               onClick={() => setActivePage((p) => Math.max(1, p - 1))}
               disabled={activePage === 1}
-              className={`px-3 py-2 border border-gray-300 rounded-md text-sm hover:bg-gray-50 ${
+              className={`px-3 py-2 border border-gray-300 rounded-md text-sm hover:bg-gray-50 dark:hover:bg-gray-500 ${
                 activePage === 1 ? 'text-gray-400 cursor-not-allowed' : 'text-gray-400'
               }`}
             >
@@ -554,7 +207,7 @@ const Ideas: React.FC = () => {
             <button
               onClick={() => setActivePage((p) => Math.min(totalPages, p + 1))}
               disabled={activePage === totalPages}
-              className={`px-3 py-2 border border-gray-300 rounded-md text-sm hover:bg-gray-50 ${
+              className={`px-3 py-2 border border-gray-300 rounded-md text-sm hover:bg-gray-50 dark:hover:bg-gray-500 ${
                 activePage === totalPages
                   ? 'text-gray-400 cursor-not-allowed'
                   : 'text-gray-400'
