@@ -65,7 +65,7 @@ const Footer = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
                     {/* Brand Info */}
                     <div className="lg:col-span-1">
-                        <h2 className="text-2xl font-bold bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">
+                        <h2 className="text-2xl font-bold text-blue-600 dark:text-violet-500 bg-clip-text text-transparent">
                             IdeaVault
                         </h2>
                         <p className="mt-4 text-gray-600 dark:text-gray-300 max-w-md">

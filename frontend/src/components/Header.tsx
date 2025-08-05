@@ -29,7 +29,7 @@ const Header: React.FC = () => {
                     <div className="flex items-center">
                         <Link
                             to="/"
-                            className="text-2xl font-bold text-blue-600 dark:text-blue-400"
+                            className="text-2xl font-bold text-blue-600 dark:text-violet-500"
                         >
                             💡 IdeaVault
                         </Link>
@@ -51,7 +51,7 @@ const Header: React.FC = () => {
                     {/* Buttons */}
                     <div className="flex items-center space-x-4">
                         {/* Submit Idea Button */}
-                        <button className="bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600">
+                        <button className="bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-blue-700 dark:bg-violet-500 dark:hover:bg-violet-600">
                             Submit Idea
                         </button>
 
