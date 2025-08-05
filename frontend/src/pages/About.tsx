@@ -18,7 +18,7 @@ const About: React.FC = () => {
         {/* Main Content */}
         <div className="grid lg:grid-cols-3 gap-8 mb-16">
           {/* Mission Section */}
-          <div className="lg:col-span-2 bg-white rounded-xl shadow-lg p-8">
+          <div className="lg:col-span-2 bg-white rounded-2xl shadow-xl border border-gray-200 p-8 transition hover:shadow-2xl">
             <h2 className="text-3xl font-bold text-gray-900 mb-6 flex items-center">
               <span className="w-3 h-8 bg-blue-600 rounded-full mr-4"></span>
               Our Mission
@@ -31,18 +31,18 @@ const About: React.FC = () => {
           </div>
 
           {/* Stats Card */}
-          <div className="bg-gradient-to-br from-blue-600 to-blue-700 rounded-xl shadow-lg p-8 text-white">
+          <div className="bg-gradient-to-br from-blue-600 to-blue-700 rounded-2xl shadow-xl border border-blue-300 p-8 text-white transition hover:shadow-2xl">
             <h3 className="text-2xl font-bold mb-6">Platform Stats</h3>
             <div className="space-y-4">
-              <div>
+              <div className="hover:scale-105 transform transition">
                 <div className="text-3xl font-bold">1%</div>
                 <div className="text-blue-100">Revenue Attribution</div>
               </div>
-              <div>
+              <div className="hover:scale-105 transform transition">
                 <div className="text-3xl font-bold">100%</div>
                 <div className="text-blue-100">Open Source</div>
               </div>
-              <div>
+              <div className="hover:scale-105 transform transition">
                 <div className="text-3xl font-bold">∞</div>
                 <div className="text-blue-100">Ideas Welcome</div>
               </div>
@@ -51,7 +51,7 @@ const About: React.FC = () => {
         </div>
 
         {/* How It Works Section */}
-        <div className="bg-white rounded-xl shadow-lg p-8 mb-16">
+        <div className="bg-white rounded-2xl shadow-xl border border-gray-200 p-8 mb-16 transition hover:shadow-2xl">
           <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">
             How It Works
           </h2>
@@ -77,7 +77,7 @@ const About: React.FC = () => {
                 icon: "💰"
               }
             ].map((item, index) => (
-              <div key={index} className="text-center group">
+              <div key={index} className="bg-gray-50 rounded-xl p-6 border border-gray-200 shadow-md hover:shadow-lg transition text-center group">
                 <div className="relative mb-6">
                   <div className="w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                     {item.step}
@@ -94,7 +94,7 @@ const About: React.FC = () => {
         {/* Features Grid */}
         <div className="grid lg:grid-cols-2 gap-8 mb-16">
           {/* 1% Model */}
-          <div className="bg-white rounded-xl shadow-lg p-8">
+          <div className="bg-white rounded-2xl shadow-xl border border-gray-200 p-8 hover:shadow-2xl transition">
             <h2 className="text-3xl font-bold text-gray-900 mb-6 flex items-center">
               <span className="w-3 h-8 bg-green-500 rounded-full mr-4"></span>
               The 1% Model
@@ -108,7 +108,7 @@ const About: React.FC = () => {
           </div>
 
           {/* Open Source */}
-          <div className="bg-white rounded-xl shadow-lg p-8">
+          <div className="bg-white rounded-2xl shadow-xl border border-gray-200 p-8 hover:shadow-2xl transition">
             <h2 className="text-3xl font-bold text-gray-900 mb-6 flex items-center">
               <span className="w-3 h-8 bg-purple-500 rounded-full mr-4"></span>
               Open Source
@@ -121,13 +121,13 @@ const About: React.FC = () => {
         </div>
 
         {/* Technology Stack */}
-        <div className="bg-white rounded-xl shadow-lg p-8 mb-16">
+        <div className="bg-white rounded-2xl shadow-xl border border-gray-200 p-8 mb-16 hover:shadow-2xl transition">
           <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">
             Technology Stack
           </h2>
           
           <div className="grid md:grid-cols-2 gap-12">
-            <div className="text-center">
+            <div className="text-center hover:scale-105 transition-transform duration-300">
               <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-6">
                 BE
               </div>
@@ -147,7 +147,7 @@ const About: React.FC = () => {
               </div>
             </div>
             
-            <div className="text-center">
+            <div className="text-center hover:scale-105 transition-transform duration-300">
               <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-6">
                 FE
               </div>
@@ -170,7 +170,7 @@ const About: React.FC = () => {
         </div>
 
         {/* Call to Action */}
-        <div className="text-center bg-gradient-to-r from-blue-600 to-blue-700 rounded-xl shadow-lg p-12">
+        <div className="text-center bg-gradient-to-r from-blue-600 to-blue-700 rounded-2xl shadow-xl p-12 hover:shadow-2xl transition">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
             Ready to License Your Ideas?
           </h2>

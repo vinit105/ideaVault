@@ -2,6 +2,25 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Home: React.FC = () => {
+
+const keyFeatures = [
+  {
+    icon:"📝",
+    title:"Register Ideas",
+    desc:"Register your software ideas with attribution license and timestamped proof"
+  },
+  {
+    icon:"🧾",
+    title:"1% Revenue Model",
+    desc:"Enforceable 1% gross revenue clause via our unique licensing system"
+  },
+  {
+    icon:"🛡",
+    title:"License Certificates",
+    desc:"Download official license certificates for each idea submission"
+  }
+]
+
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
@@ -16,12 +35,12 @@ const Home: React.FC = () => {
               under a unique 1% attribution model.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="border-2 border-white text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-white hover:text-blue-600 transition">
+              <button className="border-2 border-white text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-white hover:text-blue-600 transition duration-300 transform hover:scale-105">
                 Submit Your Idea
               </button>
               <Link
                 to="/ideas" 
-                className="border-2 border-white text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-white hover:text-blue-600 transition">
+                className="border-2 border-white text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-white hover:text-blue-600 transition duration-300 transform hover:scale-105">
                 Browse Ideas
               </Link>
             </div>
@@ -42,29 +61,15 @@ const Home: React.FC = () => {
           </div>
           
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="text-center p-6">
-              <div className="text-4xl mb-4">📝</div>
-              <h3 className="text-xl font-bold mb-2">Register Ideas</h3>
-              <p className="text-gray-600">
-                Register your software ideas with attribution license and timestamped proof
-              </p>
-            </div>
-            
-            <div className="text-center p-6">
-              <div className="text-4xl mb-4">🧾</div>
-              <h3 className="text-xl font-bold mb-2">1% Revenue Model</h3>
-              <p className="text-gray-600">
-                Enforceable 1% gross revenue clause via our unique licensing system
-              </p>
-            </div>
-            
-            <div className="text-center p-6">
-              <div className="text-4xl mb-4 text-black">🛡</div>
-              <h3 className="text-xl font-bold mb-2">License Certificates</h3>
-              <p className="text-gray-600">
-                Download official license certificates for each idea submission
-              </p>
-            </div>
+            {keyFeatures.map((feature)=>(
+              <div key={feature.title} className="text-center p-6 border-blue-100 border-2 rounded-lg hover:border-blue-300 transition-all duration-300 hover:shadow-lg hover:bg-blue-50 transform hover:-translate-y-1">
+                <div className="text-4xl mb-4">{feature.icon}</div>
+                <h3 className="text-xl font-bold mb-2">{feature.title}</h3>
+                <p className="text-gray-600">
+                  {feature.desc}
+                </p>
+              </div>  
+            ))}
           </div>
         </div>
       </section>
@@ -78,7 +83,7 @@ const Home: React.FC = () => {
           <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
             Join our community of innovative developers and founders. Start protecting your ideas today.
           </p>
-          <button className="bg-blue-600 text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-blue-700 transition">
+          <button className="bg-blue-600 text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-blue-700 transition duration-300 transform hover:scale-105">
             Get Started Now
           </button>
         </div>
