@@ -1,3 +1,5 @@
+import connectDB from './config/connectDB';
+import ideasRoute from './routes/ideas';
 import express from 'express';
 import cors from 'cors';
 import helmet from 'helmet';
@@ -6,6 +8,9 @@ import rateLimit from 'express-rate-limit';
 
 // Load environment variables
 dotenv.config();
+
+// Connect to MongoDB
+connectDB();
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -39,12 +44,8 @@ app.get('/health', (req, res) => {
 });
 
 // Ideas routes placeholder
-app.get('/api/ideas', (req, res) => {
-  res.json({ 
-    ideas: [],
-    message: 'Ideas endpoint - coming soon'
-  });
-});
+app.use('/api/ideas', ideasRoute);
+
 
 // User routes placeholder
 app.get('/api/users', (req, res) => {
