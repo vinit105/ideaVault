@@ -27,6 +27,7 @@
   "author": "IdeaVault Team",
   "license": "MIT",
   "devDependencies": {
+    "all-contributors-cli": "^6.26.1",
     "concurrently": "^8.2.0"
   },
   "engines": {
