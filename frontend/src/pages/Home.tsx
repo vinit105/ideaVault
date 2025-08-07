@@ -36,9 +36,11 @@ const Home: React.FC = () => {
                             credit they deserve under a unique 1% attribution model.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                            <Link to="/submit-idea">
                             <button className="border-2 border-white text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-white hover:text-blue-600 transition duration-300 transform hover:scale-105 dark:hover:bg-purple-100 dark:hover:text-purple-900">
                                 Submit Your Idea
                             </button>
+                            </Link>
                             <Link
                                 to="/ideas"
                                 className="border-2 border-white text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-white hover:text-blue-600 transition duration-300 transform hover:scale-105 dark:hover:bg-purple-100 dark:hover:text-purple-900"
