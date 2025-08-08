@@ -1,6 +1,6 @@
 # 💡 IdeaVault - License Your Ideas. Get Recognized.
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-8-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 Welcome to **IdeaVault**, an open-source SaaS platform that empowers developers and founders to **license their original software project ideas** under a unique 1% attribution model.
 
@@ -12,16 +12,16 @@ Welcome to **IdeaVault**, an open-source SaaS platform that empowers developers 
 
 ## 📌 Table of Contents
 
-- [Introduction](#introduction)
-- [Technology Used](#technology-used)
+- [Introduction](#-introduction)
+- [Technology Used](#-technology-used)
 - [Key Features](#-key-features)
-- [Overview](#overview)
-- [Getting Started](#getting-started)
-- [Contribution Guidelines](#contribution-guidelines)
-- [How to Report Bugs](#how-to-report-bugs)
-- [How to Request Enhancements](#how-to-request-enhancements)
-- [Contributors](#contributors)
-- [Support](#support)
+- [Overview](#-overview)
+- [Getting Started](#-getting-started)
+- [Contribution Guidelines](#-contribution-guidelines)
+- [How to Report Bugs](#-how-to-report-bugs)
+- [How to Request Enhancements](#-how-to-request-enhancements)
+- [Contributors](#-contributors)
+- [Support](#-support)
 
 ---
 
@@ -177,6 +177,13 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/vinit105"><img src="https://avatars.githubusercontent.com/u/161505072?v=4?s=100" width="100px;" alt="Vinit"/><br /><sub><b>Vinit</b></sub></a><br /><a href="https://github.com/vinit105/ideaVault/commits?author=vinit105" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/tusharg2210"><img src="https://avatars.githubusercontent.com/u/147972748?v=4?s=100" width="100px;" alt="Tushar Gupta"/><br /><sub><b>Tushar Gupta</b></sub></a><br /><a href="https://github.com/vinit105/ideaVault/commits?author=tusharg2210" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/ChaitanyaEmani"><img src="https://avatars.githubusercontent.com/u/131893680?v=4?s=100" width="100px;" alt="ChaitanyaEmani"/><br /><sub><b>ChaitanyaEmani</b></sub></a><br /><a href="https://github.com/vinit105/ideaVault/commits?author=ChaitanyaEmani" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/deepanshu-prajapati01"><img src="https://avatars.githubusercontent.com/u/98377377?v=4?s=100" width="100px;" alt="Deepanshu"/><br /><sub><b>Deepanshu</b></sub></a><br /><a href="https://github.com/vinit105/ideaVault/commits?author=deepanshu-prajapati01" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/Nikhilesh002"><img src="https://avatars.githubusercontent.com/u/134734453?v=4?s=100" width="100px;" alt="G Sai Nikhilesh"/><br /><sub><b>G Sai Nikhilesh</b></sub></a><br /><a href="https://github.com/vinit105/ideaVault/commits?author=Nikhilesh002" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/rajashree0705"><img src="https://avatars.githubusercontent.com/u/180735883?v=4?s=100" width="100px;" alt="RajashreeBorah"/><br /><sub><b>RajashreeBorah</b></sub></a><br /><a href="https://github.com/vinit105/ideaVault/commits?author=rajashree0705" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/vaishaligoyal05"><img src="https://avatars.githubusercontent.com/u/181724407?v=4?s=100" width="100px;" alt="vaishali goyal"/><br /><sub><b>vaishali goyal</b></sub></a><br /><a href="https://github.com/vinit105/ideaVault/commits?author=vaishaligoyal05" title="Code">💻</a></td>
+    </tr>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/rishika638"><img src="https://avatars.githubusercontent.com/u/179303590?v=4?s=100" width="100px;" alt="rishika638"/><br /><sub><b>rishika638</b></sub></a><br /><a href="https://github.com/vinit105/ideaVault/commits?author=rishika638" title="Code">💻</a></td>
     </tr>
   </tbody>
   <tfoot>

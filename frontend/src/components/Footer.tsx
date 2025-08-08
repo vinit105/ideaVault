@@ -80,15 +80,15 @@ const Footer: React.FC = () => {
     ];
 
     return (
-        <footer className="bg-white text-gray-600 pt-12 pb-6 border-t border-blue-100">
+        <footer className="bg-white dark:bg-gray-900 text-gray-600 dark:text-gray-300 pt-12 pb-6">
             <div className="max-w-6xl mx-auto px-4">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
                     {/* Brand Info */}
-                    <div className="md:col-span-1">
-                        <h2 className="text-2xl font-bold bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">
+                    <div className="lg:col-span-1">
+                        <h2 className="text-2xl font-bold text-blue-600 dark:text-violet-500 bg-clip-text text-transparent">
                             IdeaVault
                         </h2>
-                        <p className="mt-4 text-gray-600 max-w-md">
+                        <p className="mt-4 text-gray-600 dark:text-gray-300 max-w-md">
                             IdeaVault is a platform to license your software project ideas with proof and attribution.
                             Protect your creativity and earn recognition with our 1% model.
                         </p>
@@ -99,7 +99,7 @@ const Footer: React.FC = () => {
                                     href={socialLink.to}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="text-gray-500 hover:text-black transition-colors duration-200"
+                                    className="text-gray-500 hover:text-black dark:text-gray-200 dark:hover:text-white transition-colors duration-200"
                                 >
                                     {socialLink.icon}
                                 </a>
@@ -109,13 +109,13 @@ const Footer: React.FC = () => {
 
                     {/* Quick Links */}
                     <div>
-                        <h3 className="text-gray-800 font-semibold mb-4">Quick Links</h3>
+                        <h3 className="text-gray-800 dark:text-gray-100 font-semibold mb-4">Quick Links</h3>
                         <ul className="space-y-3">
                             {quickLinks.map((link: QuickLink) => (
                                 <li key={link.name}>
                                     <Link
                                         to={link.href}
-                                        className="text-gray-600 hover:text-gray-900 transition-colors duration-200 flex items-center gap-2 group"
+                                        className="text-gray-600 dark:text-gray-300 hover:text-gray-900 transition-colors duration-200 flex items-center gap-2 group"
                                     >
                                         <link.icon className={`w-4 h-4 ${link.color}`} />
                                         <span>{link.name}</span>
@@ -127,13 +127,13 @@ const Footer: React.FC = () => {
 
                     {/* Legal Links */}
                     <div>
-                        <h3 className="text-gray-800 font-semibold mb-4">Legal</h3>
+                        <h3 className="text-gray-800 dark:text-gray-100 font-semibold mb-4">Legal</h3>
                         <ul className="space-y-3">
                             {legalLinks.map((link: LegalLink) => (
                                 <li key={link.name}>
                                     <a
                                         href={link.href}
-                                        className="text-gray-600 hover:text-gray-900 transition-colors duration-200 flex items-center gap-2 group"
+                                        className="text-gray-600 dark:text-gray-300 hover:text-gray-900 transition-colors duration-200 flex items-center gap-2 group"
                                     >
                                         <link.icon className={`w-4 h-4 ${link.color}`} />
                                         <span>{link.name}</span>
@@ -147,10 +147,10 @@ const Footer: React.FC = () => {
                 {/* Divider */}
                 <div className="border-t border-gray-200 mt-8 pt-8">
                     <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-                        <div className="text-center md:text-left text-sm text-gray-500">
+                        <div className="text-center md:text-left text-sm text-gray-500 dark:text-gray-50">
                             <p>© {currentYear} IdeaVault. All rights reserved.</p>
                         </div>
-                        <div className="flex items-center text-sm text-gray-500">
+                        <div className="flex items-center text-sm text-gray-500 dark:text-gray-50">
                             <span>Made with</span>
                             <Heart className="w-4 h-4 mx-1 text-red-500" />
                             <span>
@@ -161,7 +161,7 @@ const Footer: React.FC = () => {
                                     rel="noopener noreferrer"
                                     className="text-blue-500 hover:text-blue-600 transition-colors"
                                 >
-                                    vinit105
+                                    Vinit
                                 </a>
                             </span>
                         </div>
