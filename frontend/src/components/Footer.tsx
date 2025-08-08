@@ -84,8 +84,8 @@ const Footer: React.FC = () => {
             <div className="max-w-6xl mx-auto px-4">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
                     {/* Brand Info */}
-                    <div className="lg:col-span-1">
-                        <h2 className="text-2xl font-bold text-blue-600 dark:text-violet-500 bg-clip-text text-transparent">
+                    <div className="md:col-span-1">
+                        <h2 className="text-2xl font-bold text-blue-600 dark:text-violet-500 bg-clip-text">
                             IdeaVault
                         </h2>
                         <p className="mt-4 text-gray-600 dark:text-gray-300 max-w-md">
