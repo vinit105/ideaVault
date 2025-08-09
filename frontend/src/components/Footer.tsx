@@ -1,11 +1,31 @@
 import { Link } from "react-router-dom";
-import { Home, BookOpen, Info, Heart, Github, Shield, ScrollText, Twitter, Linkedin } from "lucide-react";
+import { Home, BookOpen, Info, Heart, Github, Shield, ScrollText, Twitter, Linkedin, LucideIcon } from "lucide-react";
+import { ReactElement } from "react";
 
-const Footer = () => {
-    const currentYear = new Date().getFullYear();
+interface SocialLink {
+    name: string;
+    icon: ReactElement;
+    to: string;
+}
 
+interface QuickLink {
+    name: string;
+    href: string;
+    icon: LucideIcon;
+    color: string;
+}
 
-    const socialLinks = [
+interface LegalLink {
+    name: string;
+    href: string;
+    icon: LucideIcon;
+    color: string;
+}
+
+const Footer: React.FC = () => {
+    const currentYear: number = new Date().getFullYear();
+
+    const socialLinks: SocialLink[] = [
         {
             name: "Github",
             icon: <Github className="w-6 h-6" />,
@@ -21,9 +41,9 @@ const Footer = () => {
             icon: <Linkedin className="size-6" />,
             to: "#"
         }
-    ]
+    ];
 
-    const quickLinks = [
+    const quickLinks: QuickLink[] = [
         {
             name: "Home",
             href: "/",
@@ -44,7 +64,7 @@ const Footer = () => {
         },
     ];
 
-    const legalLinks = [
+    const legalLinks: LegalLink[] = [
         {
             name: "Privacy Policy",
             href: "#",
@@ -62,10 +82,10 @@ const Footer = () => {
     return (
         <footer className="bg-white dark:bg-gray-900 text-gray-600 dark:text-gray-300 pt-12 pb-6">
             <div className="max-w-6xl mx-auto px-4">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
                     {/* Brand Info */}
-                    <div className="lg:col-span-1">
-                        <h2 className="text-2xl font-bold text-blue-600 dark:text-violet-500 bg-clip-text text-transparent">
+                    <div className="md:col-span-1">
+                        <h2 className="text-2xl font-bold text-blue-600 dark:text-violet-500 bg-clip-text">
                             IdeaVault
                         </h2>
                         <p className="mt-4 text-gray-600 dark:text-gray-300 max-w-md">
@@ -73,7 +93,7 @@ const Footer = () => {
                             Protect your creativity and earn recognition with our 1% model.
                         </p>
                         <div className="flex space-x-4 mt-6">
-                            {socialLinks.map((socialLink) => (
+                            {socialLinks.map((socialLink: SocialLink) => (
                                 <a
                                     key={socialLink.name}
                                     href={socialLink.to}
@@ -83,7 +103,6 @@ const Footer = () => {
                                 >
                                     {socialLink.icon}
                                 </a>
-
                             ))}
                         </div>
                     </div>
@@ -92,7 +111,7 @@ const Footer = () => {
                     <div>
                         <h3 className="text-gray-800 dark:text-gray-100 font-semibold mb-4">Quick Links</h3>
                         <ul className="space-y-3">
-                            {quickLinks.map((link) => (
+                            {quickLinks.map((link: QuickLink) => (
                                 <li key={link.name}>
                                     <Link
                                         to={link.href}
@@ -110,7 +129,7 @@ const Footer = () => {
                     <div>
                         <h3 className="text-gray-800 dark:text-gray-100 font-semibold mb-4">Legal</h3>
                         <ul className="space-y-3">
-                            {legalLinks.map((link) => (
+                            {legalLinks.map((link: LegalLink) => (
                                 <li key={link.name}>
                                     <a
                                         href={link.href}
