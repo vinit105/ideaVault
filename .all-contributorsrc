@@ -81,8 +81,18 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "AnirudhPhophalia",
+      "name": "Anirudh Phophalia",
+      "avatar_url": "https://avatars.githubusercontent.com/u/182049272?v=4",
+      "profile": "https://github.com/AnirudhPhophalia",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
-  "linkToUsage": true
+  "linkToUsage": true,
+  "commitType": "docs"
 }
