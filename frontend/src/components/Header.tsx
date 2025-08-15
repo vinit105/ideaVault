@@ -51,9 +51,9 @@ const Header: React.FC = () => {
                     {/* Buttons */}
                     <div className="flex items-center space-x-4">
                         {/* Submit Idea Button */}
-                        <button className="bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-blue-700 dark:bg-violet-500 dark:hover:bg-violet-600">
-                            Submit Idea
-                        </button>
+                            <Link to="/submit-idea" className="bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-blue-700 dark:bg-violet-500 dark:hover:bg-violet-600">
+                                Submit Idea
+                            </Link>
 
                         {/* Sign In Button */}
                         <button className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium">
