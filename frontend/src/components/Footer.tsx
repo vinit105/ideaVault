@@ -67,13 +67,13 @@ const Footer: React.FC = () => {
     const legalLinks: LegalLink[] = [
         {
             name: "Privacy Policy",
-            href: "#",
+            href: "/privacy",
             icon: Shield,
             color: "text-red-400",
         },
         {
             name: "Terms & Conditions",
-            href: "#",
+            href: "/terms",
             icon: ScrollText,
             color: "text-yellow-400",
         },
@@ -131,13 +131,13 @@ const Footer: React.FC = () => {
                         <ul className="space-y-3">
                             {legalLinks.map((link: LegalLink) => (
                                 <li key={link.name}>
-                                    <a
-                                        href={link.href}
-                                        className="text-gray-600 dark:text-gray-300 hover:text-gray-900 transition-colors duration-200 flex items-center gap-2 group"
-                                    >
-                                        <link.icon className={`w-4 h-4 ${link.color}`} />
-                                        <span>{link.name}</span>
-                                    </a>
+                                        <Link
+                                            to={link.href}
+                                            className="text-gray-600 dark:text-gray-300 hover:text-gray-900 transition-colors duration-200 flex items-center gap-2 group"
+                                        >
+                                            <link.icon className={`w-4 h-4 ${link.color}`} />
+                                            <span>{link.name}</span>
+                                        </Link>
                                 </li>
                             ))}
                         </ul>

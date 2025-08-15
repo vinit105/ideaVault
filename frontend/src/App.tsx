@@ -5,6 +5,9 @@ import Home from './pages/Home';
 import Ideas from './pages/Ideas';
 import SubmitIdea from './pages/SubmitIdea';
 import About from './pages/About';
+import License from './pages/License';
+import Terms from './pages/Terms';
+import Privacy from './pages/Privacy';
 
 function App() {
   return (
@@ -15,8 +18,12 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/ideas" element={<Ideas />} />
+            <Route path="/license/:id" element={<License />} />
+            <Route path="/license" element={<License />} />
+            <Route path="/terms" element={<Terms />} />
+            <Route path="/privacy" element={<Privacy />} />
             <Route path="/about" element={<About />} />
-             <Route path="/submit-idea" element={<SubmitIdea />} />
+            <Route path="/submit-idea" element={<SubmitIdea />} />
           </Routes>
         </main>
         <Footer/>

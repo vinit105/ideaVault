@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 interface Idea {
   id: number;
@@ -111,6 +112,7 @@ const [favoriteIds, setFavoriteIds] = useState<number[]>(() => {
     );
   };
 
+  const navigate = useNavigate();
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-800 py-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -201,7 +203,10 @@ const [favoriteIds, setFavoriteIds] = useState<number[]>(() => {
                   </span>
                 </div>
 
-                <button className="bg-blue-600 text-white px-4 py-2 rounded-md text-sm hover:bg-blue-700">
+                <button
+                  className="bg-blue-600 text-white px-4 py-2 rounded-md text-sm hover:bg-blue-700"
+                  onClick={() => navigate(`/license/${idea.id}`)}
+                >
                   View License
                 </button>
               </div>
