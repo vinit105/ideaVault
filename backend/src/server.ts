@@ -1,24 +1,27 @@
 import connectDB from './config/connectDB';
 import ideasRoute from './routes/ideas';
 import express from 'express';
+import mongoose from 'mongoose';
+import cookieParser from 'cookie-parser';
 import cors from 'cors';
 import helmet from 'helmet';
-import dotenv from 'dotenv';
+import authRoutes from './routes/auth';
 import rateLimit from 'express-rate-limit';
+import auth from './middleware/auth';
 
-// Load environment variables
-dotenv.config();
-
-// Connect to MongoDB
 connectDB();
 
 const app = express();
 const PORT = process.env.PORT || 3001;
+mongoose.connect(process.env.MONGO_URI!)
+  .then(() => console.log('MongoDB connected'))
+  .catch(err => console.log(err));
 
 // Middleware
 app.use(helmet());
-app.use(cors());
+app.use(cors({ origin: true, credentials: true }));
 app.use(express.json());
+app.use(cookieParser());
 
 // Rate limiting
 const limiter = rateLimit({
@@ -26,6 +29,9 @@ const limiter = rateLimit({
   max: 100 // limit each IP to 100 requests per windowMs
 });
 app.use(limiter);
+
+// Auth routes
+app.use('/auth', authRoutes);
 
 // Basic routes
 app.get('/', (req, res) => {
@@ -49,6 +55,9 @@ app.use('/api/ideas', ideasRoute);
 
 // User routes placeholder
 app.get('/api/users', (req, res) => {
+app.get('/private', auth, (req, res) => {
+  res.json({ message: 'This is a protected route' });
+});
   res.json({ 
     users: [],
     message: 'Users endpoint - coming soon'
