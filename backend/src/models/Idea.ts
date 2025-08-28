@@ -14,6 +14,14 @@ const ideaSchema = new mongoose.Schema({
     type: [String],
     default: []
   },
+  implementationConcepts: {
+    type: String,
+    default: ''
+  },
+  ideaHash: {
+    type: String,
+    required: true
+  },
   createdAt: {
     type: Date,
     default: Date.now
