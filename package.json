@@ -33,5 +33,11 @@
   "engines": {
     "node": ">=18.0.0",
     "npm": ">=9.0.0"
+  },
+  "dependencies": {
+    "crypto": "^1.0.1",
+    "express-rate-limit": "^8.0.1",
+    "redis": "^5.8.2",
+    "uuid": "^11.1.0"
   }
 }
