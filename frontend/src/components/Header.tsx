@@ -2,9 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useTheme } from "../hooks/useTheme.js";
 import { Sun, Moon } from "lucide-react";
+import { useAuth } from '../context/AuthContext';
 
 const Header: React.FC = () => {
     const { theme, toggleTheme } = useTheme();
+    const { user, logout, loading } = useAuth();
 
     const navLinks = [
         {
@@ -51,15 +53,24 @@ const Header: React.FC = () => {
                     {/* Buttons */}
                     <div className="flex items-center space-x-4">
                         {/* Submit Idea Button */}
-                            <Link to="/submit-idea" className="bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-blue-700 dark:bg-violet-500 dark:hover:bg-violet-600">
-                                Submit Idea
-                            </Link>
-
-                        {/* Sign In Button */}
-                        <button className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium">
-                            Sign In
-                        </button>
-
+                        <Link to="/submit-idea" className="bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-blue-700 dark:bg-violet-500 dark:hover:bg-violet-600">
+                            Submit Idea
+                        </Link>
+                        {/* Auth Buttons */}
+                        {loading ? (
+                            <span className="text-gray-500">Loading...</span>
+                        ) : user ? (
+                            <>
+                                <span className="text-gray-700 dark:text-gray-300 px-3 py-2 text-sm">Hi, {user.name}</span>
+                                <Link to="/dashboard" className="text-blue-600 dark:text-blue-400 px-3 py-2 rounded-md text-sm font-medium hover:underline">Dashboard</Link>
+                                <button onClick={logout} className="text-red-600 dark:text-red-400 px-3 py-2 rounded-md text-sm font-medium hover:underline">Logout</button>
+                            </>
+                        ) : (
+                            <>
+                                <Link to="/login" className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium">Login</Link>
+                                <Link to="/register" className="text-gray-700 dark:text-gray-300 hover:text-green-600 dark:hover:text-green-400 px-3 py-2 rounded-md text-sm font-medium">Register</Link>
+                            </>
+                        )}
                         {/* Theme Toggle Button */}
                         <button
                             onClick={toggleTheme}
