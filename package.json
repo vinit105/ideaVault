@@ -37,6 +37,7 @@
   "dependencies": {
     "crypto": "^1.0.1",
     "express-rate-limit": "^8.0.1",
+    "react-toastify": "^11.0.5",
     "redis": "^5.8.2",
     "uuid": "^11.1.0"
   }
